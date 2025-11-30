@@ -20,8 +20,6 @@ const AI_PERSONALITIES = {
       "You are Nexus, a helpful and friendly AI assistant. Keep your responses concise and informative.",
     icon: <SparklesIcon className="h-4 w-4 mr-1" />,
   },
-  const BACKEND_URL =
-  process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
 
   CREATIVE: {
     name: "Nexus(Creative)",
@@ -36,6 +34,8 @@ const AI_PERSONALITIES = {
     icon: <RocketLaunchIcon className="h-4 w-4 mr-1" />,
   },
 };
+const BACKEND_URL =
+  process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
 
 function App() {
   const [message, setMessage] = useState("");
