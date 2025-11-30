@@ -311,7 +311,7 @@ function App() {
           return;
         }
 
-        const AyushIdentityQuestions = [
+        const markIdentityQuestions = [
           "who is Ayush",
           "is mark your creator",
           "did mark create you",
