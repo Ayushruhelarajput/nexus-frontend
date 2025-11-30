@@ -20,6 +20,9 @@ const AI_PERSONALITIES = {
       "You are Nexus, a helpful and friendly AI assistant. Keep your responses concise and informative.",
     icon: <SparklesIcon className="h-4 w-4 mr-1" />,
   },
+  const BACKEND_URL =
+  process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
+
   CREATIVE: {
     name: "Nexus(Creative)",
     prompt:
@@ -355,7 +358,7 @@ function App() {
           return { sender: msg.sender, text: msg.text };
         });
 
-        const response = await fetch("http://localhost:5000/api/chat", {
+        const response = await fetch("https://nexus-backend-1-cmk1.onrender.com/api/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ messages: messagesForBackend }),
