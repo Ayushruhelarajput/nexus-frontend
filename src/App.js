@@ -84,7 +84,7 @@ function App() {
   const [showPersonalityDropdown, setShowPersonalityDropdown] = useState(false);
 
   // --- YOUR NAME HERE ---
-  const creatorName = "Mark Dennis V. Manangan"; // <--- Your full name
+  const creatorName = "Ayush ruhela"; // <--- Your full name
 
   const chatBoxRef = useRef(null);
   const abortControllerRef = useRef(null);
@@ -311,19 +311,19 @@ function App() {
           return;
         }
 
-        const markIdentityQuestions = [
-          "who is mark",
+        const AyushIdentityQuestions = [
+          "who is Ayush",
           "is mark your creator",
           "did mark create you",
-          "tell me about mark",
-          "who is manangan",
-          "is manangan your developer",
-          "who developed you mark",
-          "who designed you mark",
-          "mark developer",
-          "mark creator",
-          "who is mark dennis manangan",
-          "about mark dennis v. manangan",
+          "tell me about Ayush",
+          "who is Ayush",
+          "is Ayush your developer",
+          "who developed you Ayush",
+          "who designed you Ayush",
+          "Ayush developer",
+          "Ayush creator",
+          "who is Ayush Ruhela",
+          "about Ayush ruhela",
         ].map((phrase) => phrase.toLowerCase());
 
         const isMarkIdentityQuestion = markIdentityQuestions.some((phrase) =>
